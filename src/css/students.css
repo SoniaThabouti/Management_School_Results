@@ -1,0 +1,150 @@
+/*CSS for the student's list page*/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:  rgb(162, 208, 216);
+
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*.form-control{
+  margin-left: 20%;
+}*/
+/*--------------------------------------
+General
+----------------------------------------*/
+.wrapper2{
+  background-color: rgb(162, 208, 216);
+
+}
+.bg2.scrolled {
+  background:#4399ca;
+}
+.bg2 {
+  background: transparent;
+  transition: 0.2s ease;
+}
+
+
+footer {
+  background: rgb(162, 208, 216);
+}
+
+/*-------------------------------------
+Typ
+-------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 50px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 0;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+}
+h4 {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+}
+
+/*----------------------------------
+Menu
+------------------------------------*/
+.navbar .navbar-brand {
+  font-weight: normal;
+  font-size: 25px;
+  color: #ffffff;
+}
+.navbar .navbar-nav .nav-link {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 0;
+  text-transform: uppercase;
+  transition: all-ease-in 0.4s;
+  color: #140808;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background: transparent;
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link::after {
+  /*the line thaht appear if we hover over the elements of the navbar*/
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+  background: #fff;
+  color: #fff;
+}
+
+/*----------------------------------------
+Buttton
+---------------------------------------*/
+
+
+.btn-sup {
+  border:none;
+  background-color:#BEAC6F;
+  width:99px;
+  border-color: rgb(119, 63, 63);
+  height: 45px;
+}
+.btn-mod {
+  border:none;
+  background-color: #82AFB7;
+  width:99px;
+  border-color: rgb(89, 112, 66);
+  height: 45px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.wrapper {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(162, 208, 216);
+   
+  }
+  .decor{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-family: "italic","serif";
+  }
+  .style-tab{
+    padding-top:50%;
+    font-family: "Didot", serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top:10%; /*comment centrer le texte*/
+    
+  }

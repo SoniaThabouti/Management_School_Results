@@ -1,0 +1,77 @@
+/*CSS for the welcome page for the admin that logged*/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*--------------------------------------
+General
+----------------------------------------*/
+.wrapper2{
+  background-color: #74C7B6;
+}
+
+  .style-h{
+    margin-top: 10%;
+  font-weight: 60px;
+  font-family : "Comic Sans MS", cursive;
+  color: /*#324B4B*/ #354B46;
+  
+}
+.wrapper3 {
+  padding: 100px;
+  text-align: center;
+  background-color: #4E8685;
+}
+
+  /*----------------------------------------
+Butttons
+---------------------------------------*/
+.sect-btn{
+    margin: 32px 0 0 0 ;
+    padding-left: 0;
+    
+  }
+  .sect-btn a{
+  color: #fff;
+  font-weight: normal;
+  line-height: 45px;
+  perspective: 1000px;
+  }
+  .sect-btn span{
+    position: relative;
+    display: inline-block;
+    font-size:18px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding: 2px 27px;
+    background-color: #97B1AA;
+    border-radius: 1px;
+    transition:transform 0.3s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+  
+  }
+  .sect-btn a span::before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    border-radius: 1px;
+    padding: 2px 27px;
+    transition: background 0.3s;
+    transform: rotateX(-90deg);
+    content: attr(data-hover);
+    transform-origin: 50% 0;
+  }
+  .sect-btn a:hover span,
+  .sect-btn a:focus span{
+  transform: rotateX(90deg) translateY(-22px);
+  }

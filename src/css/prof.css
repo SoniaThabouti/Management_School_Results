@@ -1,0 +1,254 @@
+/*CSS for the professor's list page*/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+ background-color: #98c1d9;
+  font-family: "Source Sans Pro", sans-serif;
+ 
+}
+/*.cont-table{
+  background-image: linear-gradient(to bottom right, rgb(102, 128, 185),rgb(156, 102, 102));
+}*/
+.style-tab{
+  padding-top:50%;
+  font-family: "Didot", serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top:10%; /*comment centrer le texte*/
+  
+}
+/*--------------------------------------
+General
+----------------------------------------*/
+
+.bg1.scrolled {
+  background:#009af3;
+}
+.bg1 {
+  background: transparent;
+  transition: 0.2s ease;
+}
+
+#foot {
+  background: rgb(162, 208, 216);
+}
+
+/*-------------------------------------
+Typ
+-------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 50px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 0;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+}
+h4 {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+}
+/*----------------------------------------
+Butttons
+---------------------------------------*/
+.section-btn {
+  margin: 32px 0 0 0;
+  padding: 0;
+}
+.section-btn a {
+  color: #fff;
+  font-weight: normal;
+  line-height: 45px;
+  perspective: 1000px;
+  margin-left: 79%;
+}
+.section-btn span {
+  padding-right: 10%;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  padding: 2px 27px;
+  background-color: #66bacf;
+  border-radius: 1px;
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+.section-btn a span::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: #000;
+  border-radius: 1px;
+  padding: 2px 27px;
+  transition: background 0.3s;
+  transform: rotateX(-90deg);
+  content: attr(data-hover);
+  transform-origin: 50% 0;
+}
+.section-btn a:hover span,
+.section-btn a:focus span {
+  transform: rotateX(90deg) translateY(-22px);
+}
+
+button{
+ border-radius: 5px;
+ width: 150px;
+ height: 50px; 
+ font-family:'Times New Roman', Times, serif;
+}
+.btn1{
+  background-color: blue;
+}
+
+
+/*----------------------------------
+Menu
+------------------------------------*/
+.navbar .navbar-brand {
+  font-weight: normal;
+  font-size: 25px;
+  color: #ffffff;
+}
+.navbar .navbar-nav .nav-link {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 0;
+  text-transform: uppercase;
+  transition: all-ease-in 0.4s;
+  color: #140808;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background: transparent;
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link::after {
+  /*the line thaht appear if we hover over the elements of the navbar*/
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+  background: #fff;
+  color: #fff;
+}
+
+.wrapper {
+  padding: 50px;
+  text-align: center;
+  background-color: #6D9AA1;
+
+}
+.decor1{
+  margin-top: 10%;
+  margin-bottom: 3%;
+  font-family: "italic","serif";
+}
+/*-----------Form-------------------*/
+.content1 {
+
+  margin-left: 28%;
+  margin-top: 5%;
+  background-color: rgb(220, 232, 233);
+  padding: 4rem 1rem 4rem 1rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+.styl1{
+  font-family: oblique ,serif;
+  font-size: 20px;
+  margin-left: 1%;
+}
+.style5{
+  font-size: 30px;
+  font-family: "oblique",serif;
+  margin-bottom:7%;
+  color: #757575;
+}
+
+/*-----------Screen size adaptation------------*/
+@media (max-width: 575.98px) { 
+  
+  .section-btn a {
+    color: #fff;
+    font-weight: normal;
+    line-height: 45px;
+    perspective: 1000px;
+    margin-left: 15%;
+    
+  }
+  .content1{
+    margin-left: 5%;
+  }
+  .decor{
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+  .section-btn a {
+    color: #fff;
+    font-weight: normal;
+    line-height: 45px;
+    perspective: 1000px;
+    margin-left: 15%;
+    
+  }
+ }
+ @media(max-width:991.98px){
+  .section-btn a {
+    color: #fff;
+    font-weight: normal;
+    line-height: 45px;
+    perspective: 1000px;
+    margin-left: 25%;
+    
+  }
+  .content1{
+    margin-left: 5%;
+  }
+ }
+ @media (max-width: 1199.98px) { 
+  .section-btn a {
+    color: #fff;
+    font-weight: normal;
+    line-height: 45px;
+    perspective: 1000px;
+    margin-left: 5%;
+    
+  }
+  .content1{
+    margin-left: 29%;
+  }
+  }
